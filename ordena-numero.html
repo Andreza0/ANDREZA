@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1, 2 e 3</title>
+</head>
+<h2>
+    Exercício 1, 2 e 3
+</h2>
+
+<p id="demo"></p>
+<script>
+
+    const numeros = [40, 100, 1, 5, 25, 10];
+    numeros.sort(function (a, b) { return a - b });
+    document.getElementById("demo").innerHTML = numeros;
+
+    //JSON
+    const jsonData = JSON.stringify(numeros);
+
+    console.log(jsonData);
+    console.log(typeof jsonData);
+
+</script>
+
+<body>
+</body>
+
+</html>

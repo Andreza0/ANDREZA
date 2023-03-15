@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+
+<body>
+    <script>
+        function perfeito() {
+            let num = parseInt(document.getElementById("num").value);
+            let resp = document.getElementById("resposta");
+
+            let soma = 1;
+
+            for (let cont = 2; cont < num; cont++) {
+                if (num % cont == 0) {
+                    soma += cont;
+                }
+                if (soma == num) {
+                    resp.innerHTML = "Perfeito";
+                }
+                else {
+                    resp.innerHTML = "Nao é perfeito";
+                }
+            }
+        }
+    </script>
+    </head>
+
+    <body>
+        <input type="text" id="num" name="" placeholder="Insira o número aqui">
+        <button type="button" id="resposta" name="" onclick="perfeito()">Resposta</button>
+    </body>
+
+</html>
